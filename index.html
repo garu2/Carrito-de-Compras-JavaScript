@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./images/logoShop.png" alt="">
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="./images/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                    <!-- <div class="item">
+                        <img src="./images/products/keyboard-1.jpg" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span>X</span>
+                    </div>
+    
+                    <div class="item">
+                        <img src="./images/products/keyboard-1.jpg" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span class="delete-product" data-id="">X</span>
+                    </div> -->
+                </div>
+                <h2>Total: <strong class="price-total">0</strong> $</h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-1.jpg" alt="">
+                    <p><span>20</span>$</p>
+                </div>
+                <p class="title">Tempest Cataclysm Combo 3 En 1 Gaming Teclado</p>
+                <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-2.jpg" alt="">
+                    <p><span>35</span>$</p>
+                </div>
+                <p class="title"> Newskill Suiko Ivory Teclado Mecánico Gaming Full RGB</p>
+                <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-3.jpg" alt="">
+                    <p><span>15.50</span>$</p>
+                </div>
+                <p class="title"> Aukey KM-G16 Teclado Mecánico Gaming Retroiluminado</p>
+                <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-4.jpg" alt="">
+                    <p><span>20.20</span>$</p>
+                </div>
+                <p class="title"> Razer Huntsman Elite Teclado Mecánico Gaming RGB</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-5.jpg" alt="">
+                    <p><span>19</span>$</p>
+                </div>
+                <p class="title"> Trust GXT 856 Torac Teclado Metálico Gaming RGB</p>
+                <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-1.jpg" alt="">
+                    <p><span>45</span>$</p>
+                </div>
+                <p class="title"> MSI Vigor GK30 Teclado Gaming RGB</p>
+                <a href="" data-id="6" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-2.jpg" alt="">
+                    <p><span>23.99</span>$</p>
+                </div>
+                <p class="title"> Genesis Thor 300 RGB Teclado Mecánico Gaming RGB Switch Rojo</p>
+                <a href="" data-id="7" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-3.jpg" alt="">
+                    <p><span>50</span>$</p>
+                </div>
+                <p class="title"> Mars Gaming MKXTKL Teclado Mecánico Gaming RGB</p>
+                <a href="" data-id="8" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-4.jpg" alt="">
+                    <p><span>16</span>$</p>
+                </div>
+                <p class="title"> Trust GXT 881 Odyss Teclado Gaming Semi-Mecánico RGB</p>
+                <a href="" data-id="9" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-5.jpg" alt="">
+                    <p><span>17.50</span>$</p>
+                </div>
+                <p class="title"> Krom Krusher Teclado Gaming Híbrido RGB + Ratón</p>
+                <a href="" data-id="10" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/keyboard-1.jpg" alt="">
+                    <p><span>45</span>$</p>
+                </div>
+                <p class="title"> Corsair K55 RGB PRO XT Teclado Gaming Retroiluminado Negro</p>
+                <a href="" data-id="11" class="btn-add-cart">add to cart</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h6>Developed by <span>Garu</span>
+        </h6>
+    </footer>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./custom.js" ></script>
+</body>
+</html>
