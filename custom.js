@@ -40,6 +40,10 @@ function deleteProduct(e) {
         
         countProduct--;
     }
+    if (buyThings.length === 0) {
+        priceTotal.innerHTML = 0;
+        amountProduct.innerHTML = 0;
+    }
     loadHtml();
 }
 
