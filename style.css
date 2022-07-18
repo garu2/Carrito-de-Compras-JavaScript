@@ -43,15 +43,10 @@ header{
     height: 84px;
     cursor: pointer;
 }
-.logo:hover{
-    /* width: 227px;
-    height: 124px;
-    transition-duration: .5s; */
-}
+
 .cart{
     width: 39px;
     height: 38px;
-    /* cursor: pointer; */
 }
 .cart-products{
     position: absolute!important;
@@ -64,17 +59,13 @@ header{
 
     min-width: 290px;
 }
-/* .cart:hover{
-    margin-bottom: 16px;
-    transition-duration: .5s;
-} */
+
 .cart:hover{
     margin-bottom: 16px;
     transition-duration: .5s;
 }
 /*end header*/
 .products{
-    /* margin-top: 60px; */
     padding-top: 170px;
     display: flex;
     flex-wrap: wrap;
@@ -125,9 +116,7 @@ header{
     border: solid 2px red;
     transition-duration: .3s;
 }
-/* .carts a:hover + .cart-products{
-    display: block;
-} */
+
 /*float cart*/
 .cart-products .item img{
     width: 115px;
